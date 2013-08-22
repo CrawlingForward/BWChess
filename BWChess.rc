@@ -1,0 +1,887 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BWChess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTDLG1 DIALOGEX 50, 50, 243, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于黑白棋"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,133,82,49,18
+    CONTROL         "更多的",IDC_MORE,"Button",BS_OWNERDRAW | WS_TABSTOP,187,
+                    82,49,18
+    LTEXT           "",IDC_DYSTATIC,5,4,233,72,0,WS_EX_STATICEDGE
+    LTEXT           "电子邮件：",IDC_STATIC,12,90,40,10
+    LTEXT           "shuker@263.net",IDC_ADDRESS,54,90,69,10
+    RTEXT           "物理内存:",IDC_STATIC,21,119,107,10,NOT WS_GROUP
+    LTEXT           "(Physical mem)",IDC_PHYSICAL_MEM,134,119,70,10,NOT 
+                    WS_GROUP
+    RTEXT           "可用物理内存:",IDC_STATIC,21,131,107,10,NOT WS_GROUP
+    LTEXT           "(Avail mem)",IDC_AVAIL_MEM,134,131,70,10,NOT WS_GROUP
+    RTEXT           "可用虚拟内存:",IDC_STATIC,21,143,107,10,NOT WS_GROUP
+    LTEXT           "(Avail virtual mem)",IDC_AVAIL_VIRTUAL_MEM,134,143,70,
+                    10,NOT WS_GROUP
+    RTEXT           "CPU 类型:",IDC_STATIC,21,155,107,10,NOT WS_GROUP
+    LTEXT           "(CPU)",IDC_CPU,134,155,70,10,NOT WS_GROUP
+    RTEXT           "操作系统:",IDC_STATIC,21,167,107,10,NOT WS_GROUP
+    LTEXT           "(OS)",IDC_OS,134,167,70,10,NOT WS_GROUP
+    RTEXT           "Windows 版本:",IDC_STATIC,21,179,107,10,NOT WS_GROUP
+    LTEXT           "(Version)",IDC_VERSION,134,179,70,10,NOT WS_GROUP
+    RTEXT           "操作系统启动盘总空间:",IDC_STATIC,21,191,107,10,NOT 
+                    WS_GROUP
+    LTEXT           "(Disk space)",IDC_TOTAL_SPACE,134,191,70,10,NOT 
+                    WS_GROUP
+    RTEXT           "操作系统启动盘空闲空间:",IDC_STATIC,21,203,107,10,NOT 
+                    WS_GROUP
+    LTEXT           "(Free space)",IDC_FREE_SPACE,134,203,70,10,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,11,111,218,2,
+                    WS_EX_STATICEDGE
+END
+
+IDD_BEST1 DIALOG DISCARDABLE  20, 40, 239, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "黑白棋 - 英雄榜"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,6,156,49,17
+    PUSHBUTTON      "重置",IDC_RESTARTCOUNT,61,156,49,17
+    CONTROL         "计分规则",IDC_RULE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    171,156,61,17
+    GROUPBOX        "初级优胜者",IDC_STATIC,5,5,229,44
+    RTEXT           "姓名  ：",IDC_STATIC,17,20,43,11
+    EDITTEXT        IDC_EDIT1,61,20,63,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    LTEXT           "成绩：  胜",IDC_STATIC,149,20,41,11
+    EDITTEXT        IDC_EDIT4,195,20,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "子",IDC_STATIC,215,20,14,11
+    LTEXT           "有密码",IDC_SEC1,28,34,54,11
+    LTEXT           "分数：",IDC_STATIC,149,34,41,11
+    EDITTEXT        IDC_EDIT7,195,34,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "分",IDC_STATIC,215,34,14,11
+    GROUPBOX        "中级优胜者",IDC_STATIC,5,56,229,44
+    RTEXT           "姓名  ：",IDC_STATIC,17,69,43,11
+    EDITTEXT        IDC_EDIT2,61,69,63,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    LTEXT           "成绩：  胜",IDC_STATIC,149,69,41,11
+    EDITTEXT        IDC_EDIT5,195,69,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "子",IDC_STATIC,215,69,14,11
+    LTEXT           "Static",IDC_SEC2,28,83,54,11
+    LTEXT           "分数：",IDC_STATIC,149,83,41,11
+    EDITTEXT        IDC_EDIT8,195,83,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "分",IDC_STATIC,215,83,14,11
+    GROUPBOX        "专家级优胜者",IDC_STATIC,5,107,229,44
+    RTEXT           "姓名  ：",IDC_STATIC,17,119,43,11
+    EDITTEXT        IDC_EDIT3,61,119,63,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "成绩：  胜",IDC_STATIC,149,119,41,11
+    EDITTEXT        IDC_EDIT6,195,119,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "子",IDC_STATIC,215,119,14,11
+    LTEXT           "Static",IDC_SEC3,28,134,54,11
+    LTEXT           "分数：",IDC_STATIC,149,132,41,11
+    EDITTEXT        IDC_EDIT9,195,132,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "分",IDC_STATIC,215,132,14,11
+    PUSHBUTTON      "帮助",IDC_HELP1,116,156,49,17
+END
+
+IDD_HOWTO1 DIALOG DISCARDABLE  0, 0, 246, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "帮助"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "我懂了",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,87,102,66,17
+    CONTROL         "英雄榜",IDC_HHERO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,15,69,15
+    CONTROL         "导出棋局信息",IDC_HSAVEINFO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,87,37,69,15
+    CONTROL         "提示",IDC_HHINT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,37,69,15
+    CONTROL         "黑白棋秘诀",IDC_ADVANCE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,87,59,69,15
+    CONTROL         "载入棋局",IDC_HOPEN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,59,69,15
+    CONTROL         "查看可以下的点",IDC_HPEEP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,87,81,69,15
+    CONTROL         "黑白棋规则",IDC_RULES,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,162,59,69,15
+    CONTROL         "加/解密",IDC_HSEC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,81,69,15
+    CONTROL         "限时",IDC_HLIMIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,162,15,69,15
+    CONTROL         "悔棋",IDC_HUNDO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,162,81,69,15
+    CONTROL         "保存棋局",IDC_HSAVE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,87,15,69,15
+    CONTROL         "计算机演示",IDC_HDEMO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,162,37,69,15
+    GROUPBOX        "黑白棋帮助",IDC_STATIC,5,5,236,122,BS_CENTER | WS_GROUP
+    GROUPBOX        "黑白棋秘诀",IDC_TITLE,5,137,236,71,BS_CENTER | WS_GROUP
+    LTEXT           "ffg",IDC_CONTENT,13,149,222,51
+END
+
+IDD_MESSAGE1 DIALOG DISCARDABLE  0, 0, 185, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "确定",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,61,52,59,
+                    17
+    CTEXT           "黑棋只可以走在一个位置：%d，%d。",IDC_INFORMATION,38,14,
+                    134,33
+    ICON            IDI_QUERY,IDC_STATIC,14,13,21,23
+END
+
+IDD_MESSAGE2 DIALOG DISCARDABLE  0, 0, 175, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "确定",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,37,42,50,
+                    17
+    CONTROL         "取消",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,101,
+                    42,50,17
+    ICON            IDI_QUERY,IDC_STATIC,13,17,20,20
+    CTEXT           "Static",IDC_INFORMATION,39,17,114,16
+END
+
+IDD_RECORD1 DIALOG DISCARDABLE  20, 40, 205, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "黑白棋 - 喜登英雄榜"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,95,30,88,12,ES_AUTOHSCROLL | ES_NOHIDESEL
+    DEFPUSHBUTTON   "确定",IDOK,6,50,43,17
+    PUSHBUTTON      "取消",IDCANCEL,56,50,43,17
+    CONTROL         "加密",IDC_ADDSEC,"Button",BS_OWNERDRAW | WS_TABSTOP,106,
+                    50,43,17
+    RTEXT           "输入您的姓名：",IDC_STATIC,13,31,69,8
+    EDITTEXT        IDC_EDIT2,95,11,73,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    RTEXT           "级别：",IDC_STATIC,9,12,71,8
+    PUSHBUTTON      "帮助",IDC_HELP1,156,50,43,17
+END
+
+IDD_SETUPDLG1 DIALOG DISCARDABLE  0, 0, 169, 207
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "黑白棋"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,3,186,49,17
+    CONTROL         "取消",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,60,
+                    186,49,17
+    CONTROL         "与计算机对奕[&P]",IDC_RADIO_WITHCOMPUTER,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,15,144,12
+    CONTROL         "两人在同一计算机上对弈[&T]",IDC_RADIO_2PLAYER,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,17,32,144,12
+    GROUPBOX        "对弈方式",IDC_STATIC,4,2,161,50,WS_GROUP
+    CONTROL         "你执黑先下[&Y]",IDC_RADIO_YOU_FIRST,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,72,141,11
+    CONTROL         "计算机执黑先下[&C]",IDC_RADIO_COMPUTER_FIRST,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,17,86,140,13
+    GROUPBOX        "先手",IDC_STATIC,4,59,161,45,WS_GROUP
+    CONTROL         "初级",IDC_SKILL1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,17,123,36,12
+    CONTROL         "中级",IDC_SKILL2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,67,123,37,12
+    CONTROL         "专家级",IDC_SKILL3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,112,123,49,12
+    GROUPBOX        "棋力",IDC_STATIC,4,111,161,30,WS_GROUP
+    CONTROL         "不限时",IDC_NONEEDTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,17,160,47,14
+    EDITTEXT        IDC_TIMENUM,77,160,23,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ARROWKEYS | WS_TABSTOP,101,159,9,14
+    LTEXT           "单位(分钟)",IDC_STATIC,114,163,44,12
+    GROUPBOX        "限时",IDC_STATIC,4,147,161,36,WS_GROUP
+    PUSHBUTTON      "帮助",IDC_HELP1,117,186,49,17
+END
+
+IDD_BWCHESS_DIALOG DIALOGEX 0, 0, 303, 162
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BWChess"
+MENU IDR_MENU_CHINESE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LISTINFO,96,33,61,101,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CTEXT           "黑棋用时",IDC_TIME_CHINESE,216,16,46,9
+    CTEXT           "白棋用时",IDC_TIME_CHINESE0,163,63,54,15
+    CTEXT           "黑棋数目",IDC_BNUM,222,51,44,11
+    CTEXT           "白棋数目",IDC_WNUM,223,93,40,10
+    CTEXT           "走棋信息",IDC_INFO,199,120,61,16
+END
+
+IDD_SETTING1 DIALOG DISCARDABLE  0, 0, 186, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "声音效果",IDC_SOUNDON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,20,137,10
+    CONTROL         "计算机走棋动态效果",IDC_DYNAMIC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,35,137,10
+    CONTROL         "窗口总在最前",IDC_TOPMOST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,50,137,10
+    CONTROL         "窗口显示动态效果",IDC_SHOWDYNAMIC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,65,137,10
+    CONTROL         "始终显示可以走的位置",IDC_PEEPOFTEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,80,137,10
+    CONTROL         "始终给予提示",IDC_PROMPT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,96,137,10
+    CONTROL         "慢速",IDC_SPEED1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,16,132,34,15
+    CONTROL         "中速",IDC_SPEED2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,76,132,34,15
+    CONTROL         "快速",IDC_SPEED3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,136,132,34,15
+    DEFPUSHBUTTON   "确定",IDOK,7,156,54,18
+    PUSHBUTTON      "取消",IDCANCEL,68,156,54,18
+    PUSHBUTTON      "帮助",IDC_HELP0,129,156,54,18
+    GROUPBOX        "设置",IDC_STATIC,5,4,175,110
+    GROUPBOX        "走棋速度",IDC_STATIC,6,120,175,33,WS_GROUP
+END
+
+IDD_SEC DIALOG DISCARDABLE  0, 0, 138, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "加密"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SEC1,69,8,60,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEC2,69,32,60,13,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "确定",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,16,53,48,
+                    17
+    CONTROL         "取消 ",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,77,
+                    53,47,17
+    RTEXT           "请输入密码：",IDC_STATIC,9,11,54,12
+    RTEXT           "请确认密码：",IDC_STATIC,10,33,53,14
+END
+
+IDD_CONFIRMSEC DIALOG DISCARDABLE  0, 0, 128, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "sec"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SEC,23,23,79,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "确定",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,9,43,49,
+                    17
+    CONTROL         "取消",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,71,43,
+                    49,17
+    LTEXT           "请输入密码：",IDC_STATIC,10,8,81,13
+END
+
+IDD_DEMO DIALOGEX 0, 0, 181, 189
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "计算机对弈"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "演示历史棋局(*.BWS)",IDC_ISFILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,11,99,11
+    CONTROL         "打开...",IDC_BROWNS,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    120,9,54,18
+    CONTROL         "初级",IDC_B1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,15,66,42,14
+    CONTROL         "中级",IDC_B2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    70,66,42,14
+    CONTROL         "专家级",IDC_B3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    125,66,42,14
+    CONTROL         "初级",IDC_W1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,15,105,42,14
+    CONTROL         "中级",IDC_W2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    70,105,42,14
+    CONTROL         "专家级",IDC_W3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    125,105,42,14
+    CONTROL         "慢速",IDC_SPEED1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,15,143,42,14
+    CONTROL         "中速",IDC_SPEED2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,70,143,42,14
+    CONTROL         "快速",IDC_SPEED3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,125,143,42,14
+    CONTROL         "确定",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,6,165,54,18
+    CONTROL         "取消",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,64,165,54,18
+    LTEXT           "",IDC_FILEPATH,11,36,163,12,0,WS_EX_STATICEDGE
+    GROUPBOX        "黑方棋力",IDC_STATIC,5,55,169,33,WS_GROUP
+    GROUPBOX        "白方棋力",IDC_STATIC,5,92,169,33,WS_GROUP
+    GROUPBOX        "走棋速度",IDC_STATIC,5,129,169,33,WS_GROUP
+    PUSHBUTTON      "帮助",IDC_HELP0,122,165,54,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTDLG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 238
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_BEST1, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 234
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_HOWTO1, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 241
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_MESSAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_MESSAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_RECORD1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 200
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_SETUPDLG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 164
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_BWCHESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_SETTING1, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 181
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_SEC, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 135
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_CONFIRMSEC, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 124
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_DEMO, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 176
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_BLACK_HAND          CURSOR  DISCARDABLE     "RES\\HANDBLACK.CUR"
+IDC_HAND                CURSOR  DISCARDABLE     "res\\hand.cur"
+IDC_WHITE_HAND          CURSOR  DISCARDABLE     "RES\\HANDWHITE.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DIB
+//
+
+IDDIB_WHITE             DIB     PRELOAD MOVEABLE PURE "res\\white.BMP"
+IDDIB_CANPLACE1         DIB     PRELOAD MOVEABLE PURE "res\\CanPlace1.bmp"
+IDDIB_CANPLACE2         DIB     PRELOAD MOVEABLE PURE "res\\CanPlace2.bmp"
+IDDIB_EMPTY             DIB     PRELOAD MOVEABLE PURE "res\\Empty.bmp"
+IDDIB_F10_1             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-1.bmp"
+IDDIB_F10_10            DIB     PRELOAD MOVEABLE PURE "res\\Frame10-10.bmp"
+IDDIB_F10_2             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-2.bmp"
+IDDIB_F10_3             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-3.bmp"
+IDDIB_F10_4             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-4.bmp"
+IDDIB_F10_5             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-5.bmp"
+IDDIB_F10_6             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-6.bmp"
+IDDIB_F10_7             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-7.bmp"
+IDDIB_F10_8             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-8.bmp"
+IDDIB_F10_9             DIB     PRELOAD MOVEABLE PURE "res\\Frame10-9.bmp"
+IDDIB_F1_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame11.bmp"
+IDDIB_F1_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame1-10.bmp"
+IDDIB_F9_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame9-1.bmp"
+IDDIB_F1_3              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-3.bmp"
+IDDIB_F1_4              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-4.bmp"
+IDDIB_F1_5              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-5.bmp"
+IDDIB_F1_6              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-6.bmp"
+IDDIB_F1_7              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-7.bmp"
+IDDIB_F1_8              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-8.bmp"
+IDDIB_F1_9              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-9.bmp"
+IDDIB_F2_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame2-1.bmp"
+IDDIB_F3_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame3-1.bmp"
+IDDIB_F4_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame4-1.bmp"
+IDDIB_F5_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame5-1.bmp"
+IDDIB_F6_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame6-1.bmp"
+IDDIB_F7_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame7-1.bmp"
+IDDIB_F8_1              DIB     PRELOAD MOVEABLE PURE "res\\Frame8-1.bmp"
+IDDIB_F1_2              DIB     PRELOAD MOVEABLE PURE "res\\Frame1-2.bmp"
+IDDIB_F9_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame9-10.bmp"
+IDDIB_F3_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame3-10.bmp"
+IDDIB_F4_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame4-10.bmp"
+IDDIB_F5_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame5-10.bmp"
+IDDIB_F6_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame6-10.bmp"
+IDDIB_F7_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame7-10.bmp"
+IDDIB_F8_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame8-10.bmp"
+IDDIB_F2_10             DIB     PRELOAD MOVEABLE PURE "res\\Frame2-10.bmp"
+IDDIB_BLACK             DIB     PRELOAD MOVEABLE PURE "res\\Black.bmp"
+IDDIB_CURBLACK          DIB     PRELOAD MOVEABLE PURE "res\\CurBlack.bmp"
+IDDIB_CURWHITE          DIB     PRELOAD MOVEABLE PURE "res\\CurWhite.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\bw.ico"
+IDI_CANCEL              ICON    DISCARDABLE     "res\\Point6.ico"
+IDI_HERO                ICON    DISCARDABLE     "res\\User.ico"
+IDI_HOWTO               ICON    DISCARDABLE     "res\\Help File HLP.ico"
+IDI_MORE                ICON    DISCARDABLE     "res\\Key06.ico"
+IDI_OPEN                ICON    DISCARDABLE     "res\\ok.ico"
+IDI_QUERY               ICON    DISCARDABLE     "res\\Help GID.ico"
+IDI_RECORD              ICON    DISCARDABLE     "res\\Jester.ico"
+IDI_RESET               ICON    DISCARDABLE     "res\\Crdfle13.ico"
+IDI_SHANKHAND           ICON    DISCARDABLE     "res\\Support.ico"
+IDI_SETTING             ICON    DISCARDABLE     "res\\Destop.ico"
+IDI_RULE                ICON    DISCARDABLE     "res\\Book03.ico"
+IDI_SEC0                ICON    DISCARDABLE     "res\\Secure3.ico"
+IDI_SEC1                ICON    DISCARDABLE     "res\\Secure4.ico"
+IDI_OPENFILE            ICON    DISCARDABLE     "res\\OPENFOLD.ICO"
+IDI_HELP2               ICON    DISCARDABLE     "res\\32X32X16_QUESTION.ICO"
+IDI_NETPLAY             ICON    DISCARDABLE     "res\\WinPopup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_CHINESE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "游戏[&G]"
+    BEGIN
+        MENUITEM "新局[&N]...\tCtrl+N",         IDM_NEW
+        MENUITEM "计算机演示[&M]...\tCtrl+M",   IDM_DEMO
+        MENUITEM SEPARATOR
+        MENUITEM "保存棋局[&V]...\tCtrl+V",     IDM_SAVE
+        MENUITEM "载入棋局[&O]...\tCtrl+O",     IDM_OPEN
+        MENUITEM "导出走棋信息[&D]...\tCtrl+D", IDM_SAVEINFO
+        MENUITEM "重温棋局[&W]\tCtrl+W",        IDM_REPLAY
+        MENUITEM SEPARATOR
+        MENUITEM "英雄榜[&B]...\tCtrl+B",       IDM_BEST
+        MENUITEM SEPARATOR
+        MENUITEM "退出[&X]\tAlt+F4",            IDM_EXIT
+    END
+    POPUP "选项[&O]"
+    BEGIN
+        MENUITEM "悔棋[&U]\tCtrl+U",            IDM_UNDO
+        MENUITEM "提示[&T]\tCtrl+T",            IDM_HINT
+        MENUITEM "查看可以下子的地方[&C]\tCtrl+C", IDM_CANPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "设置[&S]...\tCtrl+S",         IDM_SETTING
+    END
+    POPUP "帮助[&H]"
+    BEGIN
+        MENUITEM "黑白棋帮助[&R]...\tCtrl+R",   IDM_HOWTO
+        MENUITEM "关于黑白棋[&A]...\tCtrl+A",   IDM_ABOUT
+    END
+END
+
+IDR_MENU_CONTEXT_CHINESE MENU DISCARDABLE 
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "新局[&N]...\tCtrl+N",         IDM_NEW
+        MENUITEM "计算机演示[&M]...\tCtrl+M",   IDM_DEMO
+        MENUITEM SEPARATOR
+        MENUITEM "保存棋局[&V]...\tCtrl+V",     IDM_SAVE
+        MENUITEM "载入棋局[&O]...\tCtrl+O",     IDM_OPEN
+        MENUITEM "导出走棋信息[&D]...\tCtrl+D", IDM_SAVEINFO
+        MENUITEM "重温棋局[&W]\tCtrl+W",        IDM_REPLAY
+        MENUITEM SEPARATOR
+        MENUITEM "悔棋[&U]\tCtrl+U",            IDM_UNDO
+        MENUITEM "提示[&T]\tCtrl+T",            IDM_HINT
+        MENUITEM "查看可以下子的地方[&C]\tCtrl+C", IDM_CANPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "英雄榜[&B]...\tCtrl+B",       IDM_BEST
+        MENUITEM SEPARATOR
+        MENUITEM "设置[&S]...\tCtrl+S",         IDM_SETTING
+        MENUITEM SEPARATOR
+        MENUITEM "黑白棋帮助[&R]...\tCtrl+R",   IDM_HOWTO
+        MENUITEM "关于黑白棋[&A]...\tCtrl+A",   IDM_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "退出[&X]\tAlt+F4",            IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDSOUND_COMPUTERWIN     WAVE    DISCARDABLE     "res\\Lose1.wav"
+IDSOUND_ERROR           WAVE    MOVEABLE PURE   "res\\error.wav"
+IDSOUND_PUTSTONE        WAVE    MOVEABLE PURE   "res\\putstone.wav"
+IDSOUND_UNDO            WAVE    MOVEABLE PURE   "res\\undo.wav"
+IDSOUND_USERWIN         WAVE    DISCARDABLE     "res\\Win1.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACC ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDM_ABOUT,              VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_BEST,               VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_CANPLACE,           VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_NETPLAY,            VIRTKEY, CONTROL, NOINVERT
+    "M",            IDM_DEMO,               VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_NEW,                VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_HOWTO,              VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SETTING,            VIRTKEY, CONTROL, NOINVERT
+    "T",            IDM_HINT,               VIRTKEY, CONTROL, NOINVERT
+    "U",            IDM_UNDO,               VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "W",            IDM_REPLAY,             VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_SINGLE_COMPUTER_CHINESE "黑白棋： 与计算机对弈, 计算机执黑先下"
+    IDS_SINGLE_USER_CHINESE "黑白棋： 与计算机对弈, 你执黑先下"
+    IDS_DOUBLE_NOLIMIT_CHINESE "黑白棋： 双人同机对弈，不限时"
+    IDS_TITLE_CHINESE       "黑白棋"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BLACKWIN_CHINESE    "本局黑棋胜。"
+    IDS_WHITEWIN_CHINESE    "本局白棋胜。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BEGINNER_CHINESE    "初级"
+    IDS_INTERMEDIATE_CHINESE "中级"
+    IDS_EXPERT_CHINESE      "专家级"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COLOR_LESS_CHINESE  "你的Windows系统显示颜色少于256种，程序的显示可能不正确。继续吗?"
+    IDS_END_CHINESE         "黑棋%d子，白棋%d子。\n"
+    IDS_TIE_CHINESE         "本局平手。\n我们的水平不分上下！"
+    IDS_BLACK_NOPLACE_CHINESE "黑棋无处可走。"
+    IDS_WHITE_NOPLACE_CHINESE "白棋无处可走。"
+    IDS_COMPUTERWIN2_CHINESE "我赢了。胜你%d手。\n你还不行，好好锻炼一下吧！"
+    IDS_USERWIN1_CHINESE    "恭喜，你获胜了。胜了我%d手。\n愿意再较量一盘吗？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USER_NOPLACE_CHINESE "你无处可走，只能让我走。"
+    IDS_COMPUTER_NOPLACE_CHINESE "我没法走了，只能让你走了。"
+    IDS_SURETORECOUNT_CHINESE "你确定要重新设置英雄榜吗？"
+    IDS_CANNOT_UNDO1_CHINESE "无法再悔棋，到头了！"
+    IDS_COMPUTERWIN1_CHINESE "你真是太差了，我胜了%d你手。\n回去多练几年吧！"
+    IDS_COMPUTERWIN0_CHINESE "你的棋子被我全吃掉了！\n再去研究一下规则吧！"
+    IDS_USERWIN2_CHINESE    "你才胜了我%d手，我不服！\n有种再下一盘！"
+    IDS_USERWIN0_CHINESE    "你好厉害，居然把我的棋全吃掉了！\n佩服佩服！"
+    IDS_EDITION             "黑白棋1.6版"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AUTHOR              "蔡莹  制作"
+    IDS_ABORT               "你确定要终止当前的对局吗？"
+    IDS_LEAVE_END           "真的不玩了吗？"
+    IDS_LEAVE_NOEND         "你真的要放弃这局？\n不玩了吗？"
+    IDS_RULE_TITLE          "计分规则"
+    IDS_RULE_CONTENT        "    你的得分等于你得子的平方减去对方得子的平方，如果你把对方的棋全部吃光，则再加上800分。"
+    IDS_SBLACK              "%2d.黑棋： %c %d。"
+    IDS_SWHITE              "%2d.白棋： %c %d。"
+    IDS_TIE                 "本局平局。"
+    IDS_OPENERROR1          "打开文件错误！\n可能是文件被修改过！"
+    IDS_MORETHANTHREE_CHINESE "我已提示了你%d次，不能再提示了！"
+    IDS_OPENERROR2          "打开文件错误！\n可能是文件版本已过期！"
+    IDS_CONSEC              "确定密码"
+    IDS_SEC_ERR1            "密码不能为空！"
+    IDS_SEC_ERR2            "请重新确定你的密码！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEC_ERR3            "密码有误！"
+    IDS_SEC_ERR0            "错误"
+    IDS_BLACK_LIMIT         "黑棋超时判负！\n本局白棋获胜!"
+    IDS_WHITE_LIMIT         "白棋超时判负！\n本局黑棋获胜！"
+    IDS_HAVESEC             "有密码"
+    IDS_NOSEC               "无密码"
+    IDS_DOUBLE_LIMIT_CHINESE "黑白棋： 双人同机对弈，限时%d秒"
+    IDS_HRULES1             "    在8*8的棋盘上的中心位置，先放入四个棋子，然后双方轮流下子，最后子多者为胜利者。\n    吃子：在直线或斜线方向，己方两子之间的所有敌子（无空格）全部被吃掉，被吃掉的敌子变为己子。\n    下子：只能在可吃子的位置下子，否则停走。\n    停走：无子可下时，停走一步，让对方下子。"
+    IDS_HRULES0             "关于黑白棋规则 "
+    IDS_HMIJUE0             "关于黑白棋秘诀"
+    IDS_HMIJUE1             "    根据黑白棋的规则，角上的棋是不会被吃掉的；边上的棋子，对于占据中间的棋子，有着重要的作用；特别是当角和边连起来的时候，这一片棋就都不会被敌方吃掉了。而且，棋盘上总共64个位置，而边和角加起来有28个，所以只要占满足够的边和角的位置，你就能取得胜利。总而言之，下好黑白棋的关键在于占边和占角！"
+    IDS_HOPEN1              "    你可以把你保存过的棋局重新载入到计算机里面去，然后继续下。"
+    IDS_HUNDO1              "    悔棋不限步数。你可以从菜单种选择悔棋，也可以用快捷键（Ctrl+U），也可以直接在棋局信息的列表框中双击你想悔到的地方。"
+    IDS_HSAVE1              "    你可以将你正在下的棋局保存到你的磁盘上，以后用载入棋局功能重新将它导入到程序里，继续下。"
+    IDS_HOPEN0              "关于载入棋局"
+    IDS_HUNDO0              "关于悔棋"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HSAVE0              "关于保存棋局"
+    IDS_HSETTING0           "关于设置"
+    IDS_HHINT0              "关于提示"
+    IDS_HSAVEINFO0          "关于导出棋局信息"
+    IDS_HSETTING1           "    在这里你可以设置是否有音效、计算机下棋是否有动态效果、窗口显示是否有动态效果、窗口是否总在最前、是否总是显示可以走的地方等功能。"
+    IDS_HHINT1              "    你可以让计算机提示你走在什么地方。但这功能每局只能有三次机会！"
+    IDS_HSAVEINFO1          "    你可以将下棋双方每步的走法导出，保存在磁盘上。但本功能只能在下玩一局后才能使用。"
+    IDS_HHERO0              "关于英雄榜"
+    IDS_HSEC0               "关于加/解密"
+    IDS_HLIMIT0             "关于限时"
+    IDS_HHERO1              "    在这里面保存了三种级别的纪录保持者的成绩。"
+    IDS_HSEC1               "    为了防止有人把他人创造的纪录清除，每个纪录创造者都可以对纪录进行加密。这样，没有密码的人就不能把纪录给清除掉了。但如果纪录被人破了，密码也就没有了。"
+    IDS_HLIMIT1             "    在双人对战中，可以选择限时。这样，总时间超时者将被判负。"
+    IDS_DEMOTITLE0          "计算机演示[&M]...\tCtrl+M"
+    IDS_DEMOTITLE1          "终止计算机对弈[&M]\tCtrl+M"
+    IDS_DEMO_TITLE_11       "黑白棋：计算机演示->黑方：初级；白方：初级"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEMO_TITLE_12       "黑白棋：计算机演示->黑方：初级；白方：中级"
+    IDS_DEMO_TITLE_13       "黑白棋：计算机演示->黑方：初级；白方：专家级"
+    IDS_DEMO_TITLE_21       "黑白棋：计算机演示->黑方：中级；白方：初级"
+    IDS_DEMO_TITLE_22       "黑白棋：计算机演示->黑方：中级；白方：中级"
+    IDS_DEMO_TITLE_23       "黑白棋：计算机演示->黑方：中级；白方：专家级"
+    IDS_DEMO_TITLE_31       "黑白棋：计算机演示->黑方：专家级；白方：初级"
+    IDS_DEMO_TITLE_32       "黑白棋：计算机演示->黑方：专家级；白方：中级"
+    IDS_DEMO_TITLE_33       "黑白棋：计算机演示->黑方：专家级；白方：专家级"
+    IDS_HPEEP0              "关于查看可以下子的点"
+    IDS_HPEEP1              "    由于黑白棋规则的限制，不是所有的点都可以下子的。此功能可以帮助你标识出所有当前可以下的点。"
+    IDS_HNETPLAY0           "关于网络对战"
+    IDS_HNETPLAY1           "    未完成。"
+    IDS_HDEMO0              "关于计算机演示"
+    IDS_HDEMO1              "    在这里面你可以让计算机模拟对战，还可以演示下完的棋局；同时你可以设置对战双方的棋力，以及演示的速度等。"
+    IDS_OPENERROR3          "此局已结束。\n不能载入，只能用于演示！"
+    IDS_OPENERROR4          "此局尚未结束。\n不能演示，只能用于载入！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REPLAY0             "重温棋局[&W]\tCtrl+W"
+    IDS_REPLAY1             "终止重温棋局[&W]\tCtrl+W"
+    IDS_ERROR_NOFILE        "请选择一个下完了的棋局！"
+    IDS_ERROR_ALREADY_EXIST "已经有一个黑白棋在运行了！"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,6
+ PRODUCTVERSION 1,0,0,6
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "黑白棋\0"
+            VALUE "FileVersion", "1.6\0"
+            VALUE "InternalName", "BWChess\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BWChess.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "BWChess Application\0"
+            VALUE "ProductVersion", "1.6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\BWChess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

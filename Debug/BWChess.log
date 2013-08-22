@@ -1,0 +1,165 @@
+﻿生成启动时间为 2013-3-17 17:30:56。
+     1>项目“C:\Documents and Settings\Administrator\桌面\BWChess\BWChess.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\BWChess.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\BWChess.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\BWChess.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AboutDlg.cpp AddSec.cpp BestDlg.cpp BtnST.cpp BWChess.cpp BWChessDlg.cpp ConfirmSec.cpp Creditstatic.cpp Demo.cpp Dib.cpp DigitalPlayer.cpp HelperAPI.cpp HowToDlg.cpp HyperLink.cpp Message1.cpp Message2.cpp RecordDlg.cpp SettingDlg.cpp SetupDlg.cpp stack.cpp Undo.cpp
+         Undo.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         stack.cpp
+         SetupDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         SettingDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         RecordDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         Message2.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         Message1.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         HyperLink.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\hyperlink.cpp(84): warning C4244: “=”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\hyperlink.cpp(85): warning C4244: “=”: 从“BOOL”转换到“BYTE”，可能丢失数据
+         HowToDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         HelperAPI.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         DigitalPlayer.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+     1>c:\documents and settings\administrator\桌面\bwchess\digitalplayer.cpp(76): warning C4244: “初始化”: 从“int”转换到“char”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\digitalplayer.cpp(169): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\documents and settings\administrator\桌面\bwchess\digitalplayer.cpp(174): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         Dib.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\dib.cpp(209): warning C4244: “=”: 从“int”转换到“WORD”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\dib.cpp(303): warning C4244: “=”: 从“int”转换到“WORD”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\dib.cpp(537): warning C4244: “=”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\dib.cpp(822): warning C4189: “hPal”: 局部变量已初始化但不引用
+         Demo.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         Creditstatic.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(116): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\string.h(238) : 参见“strdup”的声明
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(227): warning C4100: “pDC”: 未引用的形参
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(560): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(560): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(578): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(578): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(596): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(596): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(640): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(640): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(671): warning C4189: “x”: 局部变量已初始化但不引用
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(759): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(759): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(776): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(776): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(793): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(793): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(827): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(827): warning C4244: “参数”: 从“BOOL”转换到“BYTE”，可能丢失数据
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(842): warning C4189: “x”: 局部变量已初始化但不引用
+     1>c:\documents and settings\administrator\桌面\bwchess\creditstatic.cpp(926): warning C4244: “=”: 从“int”转换到“WORD”，可能丢失数据
+         ConfirmSec.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         BWChessDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+     1>c:\documents and settings\administrator\桌面\bwchess\bwchessdlg.cpp(481): warning C4244: “参数”: 从“int”转换到“BYTE”，可能丢失数据
+         BWChess.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         BtnST.cpp
+         BestDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         AddSec.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         正在生成代码...
+         正在编译...
+         AboutDlg.cpp
+     1>c:\documents and settings\administrator\桌面\bwchess\resource.h(50): warning C4005: “IDC_HAND”: 宏重定义
+                 c:\program files\microsoft sdks\windows\v7.0a\include\winuser.h(8841) : 参见“IDC_HAND”的前一个定义
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0804" /nologo /fo".\Debug\BWChess.res" BWChess.rc 
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\BWChess.exe.embed.manifest.res" .\Debug\BWChess_manifest.rc 
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\BWChess.exe" /INCREMENTAL /NOLOGO version.lib winmm.lib /MANIFEST /ManifestFile:".\Debug\BWChess.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\桌面\BWChess\Debug\BWChess.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\BWChess.lib" /MACHINE:X86 .\Debug\BWChess.res
+         .\Debug\BWChess.exe.embed.manifest.res
+         .\Debug\AboutDlg.obj
+         .\Debug\AddSec.obj
+         .\Debug\BestDlg.obj
+         .\Debug\BtnST.obj
+         .\Debug\BWChess.obj
+         .\Debug\BWChessDlg.obj
+         .\Debug\ConfirmSec.obj
+         .\Debug\Creditstatic.obj
+         .\Debug\Demo.obj
+         .\Debug\Dib.obj
+         .\Debug\DigitalPlayer.obj
+         .\Debug\HelperAPI.obj
+         .\Debug\HowToDlg.obj
+         .\Debug\HyperLink.obj
+         .\Debug\Message1.obj
+         .\Debug\Message2.obj
+         .\Debug\RecordDlg.obj
+         .\Debug\SettingDlg.obj
+         .\Debug\SetupDlg.obj
+         .\Debug\stack.obj
+         .\Debug\StdAfx.obj
+         .\Debug\Undo.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\BWChess.exe.embed.manifest" /manifest .\Debug\BWChess.exe.intermediate.manifest "D:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\BWChess.exe.embed.manifest.res" .\Debug\BWChess_manifest.rc 
+       LinkEmbedManifest:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\BWChess.exe" /INCREMENTAL /NOLOGO version.lib winmm.lib /MANIFEST /ManifestFile:".\Debug\BWChess.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\桌面\BWChess\Debug\BWChess.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\BWChess.lib" /MACHINE:X86 .\Debug\BWChess.res
+         .\Debug\BWChess.exe.embed.manifest.res
+         .\Debug\AboutDlg.obj
+         .\Debug\AddSec.obj
+         .\Debug\BestDlg.obj
+         .\Debug\BtnST.obj
+         .\Debug\BWChess.obj
+         .\Debug\BWChessDlg.obj
+         .\Debug\ConfirmSec.obj
+         .\Debug\Creditstatic.obj
+         .\Debug\Demo.obj
+         .\Debug\Dib.obj
+         .\Debug\DigitalPlayer.obj
+         .\Debug\HelperAPI.obj
+         .\Debug\HowToDlg.obj
+         .\Debug\HyperLink.obj
+         .\Debug\Message1.obj
+         .\Debug\Message2.obj
+         .\Debug\RecordDlg.obj
+         .\Debug\SettingDlg.obj
+         .\Debug\SetupDlg.obj
+         .\Debug\stack.obj
+         .\Debug\StdAfx.obj
+         .\Debug\Undo.obj
+         BWChess.vcxproj -> C:\Documents and Settings\Administrator\桌面\BWChess\.\Debug\BWChess.exe
+       FinalizeBuildStatus:
+         正在删除文件“.\Debug\BWChess.unsuccessfulbuild”。
+         正在对“.\Debug\BWChess.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Documents and Settings\Administrator\桌面\BWChess\BWChess.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.65
